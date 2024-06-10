@@ -27,7 +27,7 @@ To use this package, follow these steps:
 Here's a simple example demonstrating how to use the Markov Chain Melody Generator:
 
 ```python
-from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator, visualize_melody, create_training_data2
+from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator
 
 def main():
     # Define states (pitch-duration pairs)
@@ -38,7 +38,7 @@ def main():
     ]
 
     # Create training data
-    training_data = create_training_data2()
+    training_data = create_training_data()
 
     # Instantiate and train the model
     model = MarkovChainMelodyGenerator(states)
