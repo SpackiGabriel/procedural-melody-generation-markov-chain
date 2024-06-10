@@ -8,13 +8,12 @@ from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator
 
 def create_training_data():
     '''
-    Creates a list of sample training notes based on a melody composed by me.
+    Creates a list of sample training notes for the melody of "Twinkle, Twinkle, Little Star".
 
     Returns:
         list: List of music21.note.Note objects.
     
     '''
-    
     return [
         Note("C5", quarterLength=1),
         Note("C5", quarterLength=1),
@@ -34,13 +33,12 @@ def create_training_data():
 
 def create_training_data_little_star():
     '''
-    Creates a list of sample training notes for the melody of "Twinkle, Twinkle, Little Star".
+    Creates a list of sample training notes based on a melody composed by me.
 
     Returns:
         list: List of music21.note.Note objects.
     
-    '''
-    
+    ''' 
     return [
         Note("C5", quarterLength=1),
         Note("E5", quarterLength=1),
