@@ -155,11 +155,12 @@ def fur_elise():
         Note("E5", quarterLength=0.5),
         Note("D#5", quarterLength=0.5),
         Note("E5", quarterLength=0.5),
+    
         Note("B4", quarterLength=0.5),
         Note("D5", quarterLength=0.5),
         Note("C5", quarterLength=0.5),
         Note("A4", quarterLength=1),
-        
+
         Note("A3", quarterLength=1),
         Note("E4", quarterLength=1),
         Note("A4", quarterLength=1),
@@ -169,4 +170,25 @@ def fur_elise():
         Note("G#4", quarterLength=0.5),
         Note("B4", quarterLength=1),
         Note("C5", quarterLength=1),
+
+        Note("E5", quarterLength=0.5),
+        Note("D#5", quarterLength=0.5),
+        Note("E5", quarterLength=0.5),
+        Note("D#5", quarterLength=0.5),
+        Note("E5", quarterLength=0.5),
+
+        Note("B4", quarterLength=0.5),
+        Note("D5", quarterLength=0.5),
+        Note("C5", quarterLength=0.5),
+        Note("A4", quarterLength=1),
+
+        Note("A3", quarterLength=1),
+        Note("E4", quarterLength=1),
+        Note("A4", quarterLength=1),
+        Note("B4", quarterLength=1),
+
+        Note("E4", quarterLength=0.5),
+        Note("C5", quarterLength=0.5),
+        Note("B4", quarterLength=1),
+        Note("A4", quarterLength=1),
     ]
