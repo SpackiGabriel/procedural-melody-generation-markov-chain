@@ -28,6 +28,8 @@ Here's a simple example demonstrating how to use the Markov Chain Melody Generat
 
 ```python
 from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator
+from train_examples import ode_to_joy
+
 
 def main():
     # Define states (pitch-duration pairs)
@@ -38,7 +40,7 @@ def main():
     ]
 
     # Create training data
-    training_data = create_training_data()
+    training_data = ode_to_joy()
 
     # Instantiate and train the model
     model = MarkovChainMelodyGenerator(states)
