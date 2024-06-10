@@ -3,6 +3,7 @@ import random
 from music21.note import Note
 from music21 import stream, metadata
 # from music21 import configure
+from train_examples import ode_to_joy
 from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator
 
 
@@ -67,17 +68,22 @@ def main():
     '''
 
     states = [
+        ('C4', 0.5), ('D4', 0.5), ('E4', 0.5), ('F4', 0.5), ('G4', 0.5), ('A4', 0.5), ('B4', 0.5),
+        ('C4', 1), ('D4', 1), ('E4', 1), ('F4', 1), ('G4', 1), ('A4', 1), ('B4', 1),
+        ('C4', 1.5), ('D4', 1.5), ('E4', 1.5), ('F4', 1.5), ('G4', 1.5), ('A4', 1.5), ('B4', 1.5),
+        ('C4', 2), ('D4', 2), ('E4', 2), ('F4', 2), ('G4', 2), ('A4', 2), ('B4', 2),
         ('C5', 0.5), ('D5', 0.5), ('E5', 0.5), ('F5', 0.5), ('G5', 0.5), ('A5', 0.5), ('B5', 0.5),
         ('C5', 1), ('D5', 1), ('E5', 1), ('F5', 1), ('G5', 1), ('A5', 1), ('B5', 1),
+        ('C5', 1.5), ('D5', 1.5), ('E5', 1.5), ('F5', 1.5), ('G5', 1.5), ('A5', 1.5), ('B5', 1.5),
         ('C5', 2), ('D5', 2), ('E5', 2), ('F5', 2), ('G5', 2), ('A5', 2), ('B5', 2),
     ]
 
-    training_data = create_training_data()
+    training_data = ode_to_joy()
 
     model = MarkovChainMelodyGenerator(states)
     model.train(training_data)
 
-    generated_modely = model.generate(128)
+    generated_modely = model.generate(64)
     visualize_melody(generated_modely)
 
 
