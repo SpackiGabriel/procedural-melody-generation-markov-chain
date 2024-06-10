@@ -6,7 +6,7 @@ from music21 import stream, metadata
 from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator
 
 
-def create_training_data():
+def create_training_data_little_star():
     '''
     Creates a list of sample training notes for the melody of "Twinkle, Twinkle, Little Star".
 
@@ -31,7 +31,7 @@ def create_training_data():
         Note("C5", quarterLength=2),
     ]
 
-def create_training_data_little_star():
+def create_training_data():
     '''
     Creates a list of sample training notes based on a melody composed by me.
 
