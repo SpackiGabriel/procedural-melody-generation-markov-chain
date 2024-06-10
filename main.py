@@ -6,31 +6,6 @@ from music21 import stream, metadata
 from MarkovChainMelodyGenerator import MarkovChainMelodyGenerator
 
 
-def create_training_data_little_star():
-    '''
-    Creates a list of sample training notes for the melody of "Twinkle, Twinkle, Little Star".
-
-    Returns:
-        list: List of music21.note.Note objects.
-    
-    '''
-    return [
-        Note("C5", quarterLength=1),
-        Note("C5", quarterLength=1),
-        Note("G5", quarterLength=1),
-        Note("G5", quarterLength=1),
-        Note("A5", quarterLength=1),
-        Note("A5", quarterLength=1),
-        Note("G5", quarterLength=2),
-        Note("F5", quarterLength=1),
-        Note("F5", quarterLength=1),
-        Note("E5", quarterLength=1),
-        Note("E5", quarterLength=1),
-        Note("D5", quarterLength=1),
-        Note("D5", quarterLength=1),
-        Note("C5", quarterLength=2),
-    ]
-
 def create_training_data():
     '''
     Creates a list of sample training notes based on a melody composed by me.
@@ -97,7 +72,7 @@ def main():
         ('C5', 2), ('D5', 2), ('E5', 2), ('F5', 2), ('G5', 2), ('A5', 2), ('B5', 2),
     ]
 
-    training_data = create_training_data2()
+    training_data = create_training_data()
 
     model = MarkovChainMelodyGenerator(states)
     model.train(training_data)
